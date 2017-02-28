@@ -97,6 +97,7 @@ class H2Protocol(asyncio.Protocol):
     def __init__(self):
         # Our server-side state machine.
         self.conn = H2Connection(client_side=False)
+        self.conn.local_settings.max_concurrent_streams = 2**30
 
         # The backing transport.
         self.transport = None
