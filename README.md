@@ -6,7 +6,7 @@ Simple HTTP/2 based FCM mock for testing server applications.
 
 There is an atomatic build setup on my Docker Hub, so you can run this docker simply with:
 ```bash
-docker run rslota fcm-http2-mock-server
+docker run rslota/fcm-http2-mock-server
 ```
 
 ## API
