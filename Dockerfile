@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 RUN apt-get update && \
     apt-get install -y python3 python3-pip
 
-RUN python3 -m pip install flask h2
+RUN python3 -m pip install flask==0.12.2 h2==2.6.2
 
 RUN mkdir -p /server
 ADD mock-fcm-http2-server.py /server
